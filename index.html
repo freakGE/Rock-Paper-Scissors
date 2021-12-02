@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e3522887be.js" crossorigin="anonymous"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <section class="stageOne">
+        <div class="wrapper">
+        <div class="containerResult">
+            <div id="playerResult" class="item">
+                <img class="profile user" src="icon/user.jpg" alt="User"  width=50" height="50">
+                <h2>You</h2>
+            </div>
+            <div id="computerResult" class="item">
+                <img class="profile vito" src="icon/vito.png" alt="Vito"  width="50" height="50">
+                <h2>Vito</h2>
+            </div>
+        </div>
+        <div>
+            <h3 id="round-winner"></h3>
+            <h1 id="result"></h1>
+        </div>
+        </div>
+    </section>
+    <section class="stageTwo">
+        <div class="wrapper extra">
+        <div id="choice">
+            <div onclick="rock()" class="move"><button class="rockBtn">Rock</button></div>
+            <div onclick="paper()" class="move"><button class="paperBtn">Paper</button></div>
+            <div onclick="scissor()" class="move"><button class="scissorBtn">Scissors</button></div>
+        </div>
+        <div id="restart" onclick="restartGame()"><button>Restart</button></div>
+        </div>
+    </section>
+    <section class="stageThree">
+        <div class="info">by <a href="https://github.com/freakGE">Vito</a></div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
