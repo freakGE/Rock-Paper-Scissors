@@ -1,0 +1,281 @@
+// #fb8122#1d2228#e1e2e2
+$color-bcg: hsl(213, 16%, 14%);
+$color-gray: hsl(180, 2%, 88%);
+$color-orange: hsl(26, 96%, 56%);// hsl(26, 96%, 56%);
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5em 30em 0em 30em;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.stageOne {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    color: $color-gray;
+    height: 45vh;
+    background-color: $color-bcg;
+    p{
+        font-size: 1.5rem;
+    }
+    .containerResult {
+        text-align: center;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+
+        .item {
+            
+        }
+    }
+    #round-winner{
+        padding-top: 5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        font-size: 1.5rem;
+    }
+    #result {
+        padding-top: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+    }
+    .profile {
+        border-radius: 50%;
+    }
+}
+
+.stageTwo {
+    height: 50vh;
+    background-color: $color-bcg;
+    #choice {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        .move{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-gray;
+            color: $color-bcg;
+            border-radius: 50%;
+            min-width: 8rem;
+            min-height: 8rem;
+
+            &:hover {
+                background: $color-orange;
+                transition: 250ms linear;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.015);
+            }
+        }
+    }
+    #restart {
+        button{
+            font-size: 2.5rem;
+        }
+        margin-top: 4rem;
+        padding: 1rem 3rem 1rem 3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: $color-gray;
+        border-radius: 15px;
+        &:hover{
+            background-color: $color-orange;
+            color: $color-gray;
+            transition: 250ms linear;
+        }
+    }
+}
+
+.stageThree {
+    height: 5vh;
+    background-color: $color-gray;
+    color: $color-bcg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $color-bcg;
+        text-decoration: none;
+        &:hover{
+            color: $color-orange;
+            transition: 250ms linear;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.025);
+        }
+    }
+}
+
+button, input[type="submit"], input[type="reset"] {
+    text-transform: uppercase;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 1.5rem;
+}
+
+
+// 
+
+@media screen and (max-width: 1271px) {
+    .wrapper{
+        padding: 5em 25em 0em 25em;
+    }
+    #result {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .wrapper{
+        padding: 5em 20em 0em 20em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .move {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .wrapper{
+        padding: 5em 15em 0em 15em;
+        max-width: 80em;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .wrapper{
+        padding: 5em 10em 0em 10em;
+        max-width: 80em;
+    }
+    #result {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .wrapper {
+        padding: 5em 7em 0em 7em;
+        max-width: 85em;
+    }
+    .move {
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 3em 5em 0em 5em;
+        max-width: 90em;
+    }
+    .move {
+
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .wrapper {
+        padding: 2em 3em 0em 3em;
+        max-width: 90em;
+    }
+    .move {
+
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .wrapper {
+        padding: 2em 2em 0em 2em;
+        max-width: 95em;
+    }
+    #result {
+        font-size: 1.6rem;
+    }
+    .move {
+
+    }
+}
+@media screen and (max-width: 342px) {
+    #result {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .stageOne{
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    .stageTwo{
+
+        #choice{
+        .move{
+            button{
+                font-size: 1.2rem;
+            }
+            min-width: 6.5rem;
+            min-height: 6.5rem;
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #result {
+        font-size: 1.4rem;
+    }
+}
+
+// 320px width min
+
+// height for mobile
+
+@media screen and (max-height: 850px) {
+    .stageTwo {
+        padding-bottom: 3rem;
+    }
+}
+
+
