@@ -40,10 +40,6 @@ body {
         justify-content: space-between;
         align-items: stretch;
         align-content: stretch;
-
-        .item {
-            
-        }
     }
     #round-winner{
         padding-top: 5rem;
@@ -200,9 +196,6 @@ button, input[type="submit"], input[type="reset"] {
         padding: 5em 7em 0em 7em;
         max-width: 85em;
     }
-    .move {
-
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -210,18 +203,12 @@ button, input[type="submit"], input[type="reset"] {
         padding: 3em 5em 0em 5em;
         max-width: 90em;
     }
-    .move {
-
-    }
 }
 
 @media screen and (max-width: 440px) {
     .wrapper {
         padding: 2em 3em 0em 3em;
         max-width: 90em;
-    }
-    .move {
-
     }
 }
 
@@ -232,9 +219,6 @@ button, input[type="submit"], input[type="reset"] {
     }
     #result {
         font-size: 1.6rem;
-    }
-    .move {
-
     }
 }
 @media screen and (max-width: 342px) {
@@ -337,12 +321,6 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 @media screen and (max-height: 635px) {
-    .stageOne {
-        #round-winner{
-            // padding-top: 0;
-            // font-size: 1.25rem;
-        }
-    }
     .stageTwo {
         #choice {
             .move{
