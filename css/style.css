@@ -230,4 +230,80 @@ button, input[type=submit], input[type=reset] {
   .stageTwo {
     padding-bottom: 3rem;
   }
+}
+@media screen and (max-height: 800px) {
+  .stageOne #round-winner {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-height: 710px) {
+  .stageOne #round-winner {
+    padding-top: 1rem;
+  }
+
+  .stageTwo #choice {
+    padding-top: 5rem;
+  }
+}
+@media screen and (max-height: 680px) {
+  .stageOne #result {
+    padding-top: 2rem;
+  }
+
+  .stageTwo #choice {
+    padding-top: 4rem;
+  }
+}
+@media screen and (max-height: 670px) {
+  .stageTwo #choice {
+    padding-top: 4rem;
+  }
+}
+@media screen and (max-height: 635px) {
+  .stageOne #round-winner {
+    padding-top: 0;
+    font-size: 1.25rem;
+  }
+
+  .stageTwo #choice {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-height: 635px) {
+  .stageTwo #choice .move {
+    min-width: 6rem;
+    min-height: 6rem;
+  }
+  .stageTwo #choice .move button {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-height: 610px) {
+  .stageOne #result {
+    padding-top: 0;
+  }
+}
+@media screen and (max-height: 750px), screen and (max-width: 375px) {
+  .stageOne #round-winner {
+    padding-top: 2rem;
+  }
+  .stageOne #result {
+    padding-top: 2.5rem;
+  }
+
+  .stageTwo #choice {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-height: 700px), screen and (max-width: 375px) {
+  .stageOne #round-winner {
+    padding-top: 0rem;
+  }
+  .stageOne #result {
+    padding-top: 2.5rem;
+  }
+
+  .stageTwo #choice {
+    padding-top: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
